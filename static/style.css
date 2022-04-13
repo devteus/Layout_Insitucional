@@ -5,6 +5,7 @@
     --black: #000000;
     --gray: #6C6C6C;
     --blueduetone: #3768F4 , #004398;
+    --white: #fff;
 }
 
 
@@ -15,5 +16,189 @@
     outline: none; border: none;
     text-decoration: none;
     text-transform: capitalize;
-    transition: .2s linear;
+    transition: .3s ease-in-out;
+}
+
+hr{
+    width: 100%;
+}
+
+html{
+    font-size: 80%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+
+body{
+    background: var(--white);
+}
+
+#header{
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: var(--white);
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+}
+
+.subnav{
+    margin-top: 65px;
+    padding: 15px;
+
+}
+
+.subnav a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: var(--black);
+}
+
+.subnav a:hover {
+    font-family: 'Open Sans', sans-serif;
+    transform: scale(1.1);
+    color: var(--black);
+}
+
+#header .logo{
+    height: 3rem;
+}
+
+#header {
+    
+    align-items: center;
+}
+
+
+
+#header .navbar a{
+    
+    margin: 0rem 5rem;
+    font-size: 1.4rem;
+    color: var(--gray);
+}
+
+#header .navbar a:hover{
+    
+    margin: 0rem 5rem;
+    transform: scale(1.1);
+    color: var(--gray);
+    
+}
+
+#header .icons .fas {
+    font-size: 1.8rem;
+    color: var(--gray);
+}
+
+#header .icons a {
+    color: var(--main-color);
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+
+#header .icons div:hover{
+    color: var(--main-color);
+}
+
+#menu-btn{
+    display: none;
+}
+
+.criar-btn{
+font-size: 19px;
+width: 170px;
+height: 45px;
+left: 1039px;
+
+
+background: var(--main-color);
+color: var(--white);
+font-weight: 500;
+border-radius: 100px;
+
+    
+}
+
+.criar-btn:hover {
+    font-weight: 500;
+    background: #e8162e;
+    transform: scale(1.1);
+}
+
+.text-nav{
+    text-decoration: none;
+   
+    font-weight: 500;
+    color: #6C6C6C;
+}
+
+.img-nav{
+    font-size: 19.13px;
+}
+
+.text-nav:hover{
+    color: #004398;
+}
+
+.text-dropdown{
+    list-style:none;
+}
+
+.text-dropdown:hover{
+    transform: scale(1.1);
+}
+
+.nav-link{
+    font-weight: 500;
+    color: #6C6C6C; 
+    text-decoration: none;
+}
+
+
+.dropdown-menu{
+    text-decoration: none;
+    border-style: unset;
+    
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+    color: #fff;
+    margin: 0rem 7rem;
+    
+}
+
+
+
+.dropdown-menu:hover{
+    color: var(--main-color);
+    transform: scale(1.1);
+}
+
+.h5-carrousel{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.p-carrousel{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
 }
